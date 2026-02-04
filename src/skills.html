@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Kalluri Ganesh</title>
+
+  <!-- Tailwind CSS -->
+  <link href="../src/output.css" rel="stylesheet" />
+</head>
+
+<body class="min-h-screen bg-gradient-to-b from-sky-300 via-sky-400 to-cyan-500
+ text-white">
+
+  <!-- Navbar -->
+  <nav class="flex justify-end gap-6 p-6 font-semibold text-white/90">
+    <a href="index.html" class="hover:text-white">Home</a>
+    <a href="projects.html" class="hover:text-white">Projects</a>
+    <a href="certificate.html" class="hover:text-white">Certificates</a>
+    <a href="contact.html" class="hover:text-white">Contact</a>
+    <a href="cv.html" class="hover:text-white">CV</a>
+  </nav>
+
+  <!-- Page Title -->
+  <section class="text-center pt-12 pb-16">
+    <h1 class="text-5xl font-bold">My Skills</h1>
+    <p class="mt-4 text-white/80">Technical expertise & personal strengths</p>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section class="max-w-6xl mx-auto px-8 mb-20">
+    <h2 class="text-3xl font-semibold mb-12 text-center">Technical Skills</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- Programming -->
+      <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-6">Programming</h3>
+        <div class="grid grid-cols-4 gap-8 place-items-center">
+          <div class="skill">
+            <img src="../src/images/python.png" alt="Python">
+            <span>Python</span>
+          </div>
+          <div class="skill">
+            <img src="../src/images/C_Programming_Language.svg.png" alt="C">
+            <span>C</span>
+          </div>
+          <div class="skill">
+            <img src="../src/images/c++.png" alt="C++">
+            <span>C++</span>
+          </div>
+          <div class="skill">
+            <img src="../src/images/java.png" alt="Java">
+            <span>Java</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-6">Frontend</h3>
+        <div class="grid grid-cols-5 gap-8 place-items-center">
+          <div class="skill">
+            <img src="../src/images/HTML.png" alt="HTML">
+            <span>HTML</span>
+          </div>
+          <div class="skill">
+            <img src="../src/images/css.png" alt="CSS">
+            <span>CSS</span>
+          </div>
+          <div class="skill">
+            <img src="../src/images/tailwind.png" alt="Tailwind">
+            <span>Tailwind</span>
+          </div>
+          <div class="skill">
+            <img src="../src/images/js.png" alt="JavaScript">
+            <span>JavaScript</span>
+          </div>
+          <div class="skill">
+            <img src="../src/images/react.png" alt="React">
+            <span>React</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-6">Backend</h3>
+        <div class="grid grid-cols-3 gap-8 place-items-center">
+          <div class="skill">
+            <img src="../src/images/node.png" alt="Node.js">
+            <span>Node.js</span>
+          </div>
+          <div class="skill">
+            <img src="../src/images/php.png" alt="PHP">
+            <span>PHP</span>
+          </div>
+          <div class="skill">
+            <img src="../src/images/laravel.png" alt="Laravel">
+            <span>Laravel</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-6">Databases</h3>
+        <div class="grid grid-cols-3 gap-8 place-items-center">
+          <div class="skill">
+            <img src="../src/images/mongodb.png" alt="MongoDB">
+            <span>MongoDB</span>
+          </div>
+          <div class="skill">
+            <img src="../src/images/mysql.png" alt="MySQL">
+            <span>MySQL</span>
+          </div>
+          <div class="skill">
+            <img src="../src/images/postgresql.jpg" alt="PostgreSQL">
+            <span>PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NON-TECHNICAL SKILLS -->
+  <section class="max-w-4xl mx-auto px-8 pb-24 text-center">
+    <h2 class="text-3xl font-semibold mb-10">Non-Technical Skills</h2>
+
+    <div class="flex flex-wrap justify-center gap-6">
+      <span class="soft-skill">Communication</span>
+      <span class="soft-skill">Teamwork</span>
+      <span class="soft-skill">Problem Solving</span>
+      <span class="soft-skill">Adaptability</span>
+      <span class="soft-skill">Time Management</span>
+      <span class="soft-skill">Continuous Learning</span>
+    </div>
+  </section>
+
+  <!-- Utility Styles -->
+  <style>
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .skill img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .skill span {
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .skill:hover {
+      transform: scale(1.12);
+    }
+
+    .soft-skill {
+      padding: 0.75rem 1.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+    }
+  </style>
+
+</body>
+</html>
