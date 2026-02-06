@@ -9,17 +9,40 @@
   <link href="../src/output.css" rel="stylesheet" />
 </head>
 
-<body class="min-h-screen bg-gradient-to-b from-sky-300 via-sky-400 to-cyan-500
- text-white">
+<body class="min-h-screen bg-gradient-to-b from-indigo-300 via-purple-300 to-fuchsia-300 text-white">
 
   <!-- Navbar -->
-  <nav class="flex justify-end gap-6 p-6 font-semibold text-white/90">
-    <a href="index.html" class="hover:text-white">Home</a>
-    <a href="projects.html" class="hover:text-white">Projects</a>
-    <a href="certificate.html" class="hover:text-white">Certificates</a>
-    <a href="contact.html" class="hover:text-white">Contact</a>
-    <a href="cv.html" class="hover:text-white">CV</a>
-  </nav>
+  <nav
+  class="sticky top-0 z-50
+         flex items-center justify-between
+         px-8 py-4
+         bg-white/10 backdrop-blur-md
+         font-semibold text-white/90"
+>
+
+  <!-- Name (Home Link) -->
+  <a
+    href="index.html"
+    class="text-2xl font-bold tracking-wide
+           text-white hover:text-cyan-100
+           transition"
+  >
+    Kalluri Ganesh
+  </a>
+
+  <!-- Navigation Links -->
+  <div class="flex gap-6 text-sm md:text-base">
+    <a href="index.html" class="hover:text-white transition">Home</a>
+    <!-- <a href="skills.html" class="hover:text-white transition">Skills</a> -->
+    <a href="projects.html" class="hover:text-white transition">Projects</a>
+    <a href="certificate.html" class="hover:text-white transition">Certificates</a>
+    <a href="contact.html" class="hover:text-white transition">Contact</a>
+    <a href="cv.html" class="hover:text-white transition">CV</a>
+    <a href="about.html" class="hover:text-white transition">About</a>
+  </div>
+
+</nav>
+
 
   <!-- Page Title -->
   <section class="text-center pt-12 pb-16">
@@ -36,90 +59,195 @@
       <!-- Programming -->
       <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl">
         <h3 class="text-xl font-semibold mb-6">Programming</h3>
-        <div class="grid grid-cols-4 gap-8 place-items-center">
-          <div class="skill">
-            <img src="../src/images/python.png" alt="Python">
-            <span>Python</span>
-          </div>
-          <div class="skill">
-            <img src="../src/images/C_Programming_Language.svg.png" alt="C">
-            <span>C</span>
-          </div>
-          <div class="skill">
-            <img src="../src/images/c++.png" alt="C++">
-            <span>C++</span>
-          </div>
-          <div class="skill">
-            <img src="../src/images/java.png" alt="Java">
-            <span>Java</span>
-          </div>
-        </div>
+       <div class="grid grid-cols-4 gap-8 place-items-center">
+
+  <div class="flex flex-col items-center gap-2 group">
+    <div class="w-14 h-14 flex items-center justify-center
+                rounded-xl bg-white/20 backdrop-blur-md
+                shadow-md shadow-purple-300/40
+                group-hover:bg-white/30 group-hover:scale-110
+                transition-all duration-300">
+      <img src="../src/images/python.png" alt="Python"
+           class="w-8 h-8 object-contain opacity-90">
+    </div>
+    <span class="text-sm text-white/80">Python</span>
+  </div>
+
+  <div class="flex flex-col items-center gap-2 group">
+    <div class="w-14 h-14 flex items-center justify-center
+                rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                group-hover:bg-white/30 group-hover:scale-110
+                transition-all duration-300">
+      <img src="../src/images/C_Programming_Language.svg.png" alt="C"
+           class="w-8 h-8 opacity-90">
+    </div>
+    <span class="text-sm text-white/80">C</span>
+  </div>
+
+  <div class="flex flex-col items-center gap-2 group">
+    <div class="w-14 h-14 flex items-center justify-center
+                rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                group-hover:bg-white/30 group-hover:scale-110
+                transition-all duration-300">
+      <img src="../src/images/c++.png" alt="C++"
+           class="w-8 h-8 opacity-90">
+    </div>
+    <span class="text-sm text-white/80">C++</span>
+  </div>
+
+  <div class="flex flex-col items-center gap-2 group">
+    <div class="w-14 h-14 flex items-center justify-center
+                rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                group-hover:bg-white/30 group-hover:scale-110
+                transition-all duration-300">
+      <img src="../src/images/java.png" alt="Java"
+           class="w-8 h-8 opacity-90">
+    </div>
+    <span class="text-sm text-white/80">Java</span>
+  </div>
+
+</div>
+
       </div>
 
       <!-- Frontend -->
       <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl">
-        <h3 class="text-xl font-semibold mb-6">Frontend</h3>
-        <div class="grid grid-cols-5 gap-8 place-items-center">
-          <div class="skill">
-            <img src="../src/images/HTML.png" alt="HTML">
-            <span>HTML</span>
-          </div>
-          <div class="skill">
-            <img src="../src/images/css.png" alt="CSS">
-            <span>CSS</span>
-          </div>
-          <div class="skill">
-            <img src="../src/images/tailwind.png" alt="Tailwind">
-            <span>Tailwind</span>
-          </div>
-          <div class="skill">
-            <img src="../src/images/js.png" alt="JavaScript">
-            <span>JavaScript</span>
-          </div>
-          <div class="skill">
-            <img src="../src/images/react.png" alt="React">
-            <span>React</span>
-          </div>
-        </div>
+  <h3 class="text-xl font-semibold mb-6">Frontend</h3>
+
+  <div class="grid grid-cols-5 gap-8 place-items-center">
+
+    <div class="flex flex-col items-center gap-2 group">
+      <div class="w-14 h-14 flex items-center justify-center
+                  rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                  group-hover:bg-white/30 group-hover:scale-110
+                  transition-all duration-300">
+        <img src="../src/images/HTML.png" alt="HTML" class="w-8 h-8 opacity-90">
       </div>
+      <span class="text-sm text-white/80">HTML</span>
+    </div>
+
+    <div class="flex flex-col items-center gap-2 group">
+      <div class="w-14 h-14 flex items-center justify-center
+                  rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                  group-hover:bg-white/30 group-hover:scale-110
+                  transition-all duration-300">
+        <img src="../src/images/css.png" alt="CSS" class="w-8 h-8 opacity-90">
+      </div>
+      <span class="text-sm text-white/80">CSS</span>
+    </div>
+
+    <div class="flex flex-col items-center gap-2 group">
+      <div class="w-14 h-14 flex items-center justify-center
+                  rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                  group-hover:bg-white/30 group-hover:scale-110
+                  transition-all duration-300">
+        <img src="../src/images/tailwind.png" alt="Tailwind" class="w-8 h-8 opacity-90">
+      </div>
+      <span class="text-sm text-white/80">Tailwind</span>
+    </div>
+
+    <div class="flex flex-col items-center gap-2 group">
+      <div class="w-14 h-14 flex items-center justify-center
+                  rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                  group-hover:bg-white/30 group-hover:scale-110
+                  transition-all duration-300">
+        <img src="../src/images/js.png" alt="JavaScript" class="w-8 h-8 opacity-90">
+      </div>
+      <span class="text-sm text-white/80">JavaScript</span>
+    </div>
+
+    <div class="flex flex-col items-center gap-2 group">
+      <div class="w-14 h-14 flex items-center justify-center
+                  rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                  group-hover:bg-white/30 group-hover:scale-110
+                  transition-all duration-300">
+        <img src="../src/images/react.png" alt="React" class="w-8 h-8 opacity-90">
+      </div>
+      <span class="text-sm text-white/80">React</span>
+    </div>
+
+  </div>
+</div>
+
 
       <!-- Backend -->
       <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl">
-        <h3 class="text-xl font-semibold mb-6">Backend</h3>
-        <div class="grid grid-cols-3 gap-8 place-items-center">
-          <div class="skill">
-            <img src="../src/images/node.png" alt="Node.js">
-            <span>Node.js</span>
-          </div>
-          <div class="skill">
-            <img src="../src/images/php.png" alt="PHP">
-            <span>PHP</span>
-          </div>
-          <div class="skill">
-            <img src="../src/images/laravel.png" alt="Laravel">
-            <span>Laravel</span>
-          </div>
-        </div>
+  <h3 class="text-xl font-semibold mb-6">Backend</h3>
+
+  <div class="grid grid-cols-3 gap-8 place-items-center">
+
+    <div class="flex flex-col items-center gap-2 group">
+      <div class="w-14 h-14 flex items-center justify-center
+                  rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                  group-hover:bg-white/30 group-hover:scale-110
+                  transition-all duration-300">
+        <img src="../src/images/node.png" alt="Node.js" class="w-8 h-8 opacity-90">
       </div>
+      <span class="text-sm text-white/80">Node.js</span>
+    </div>
+
+    <div class="flex flex-col items-center gap-2 group">
+      <div class="w-14 h-14 flex items-center justify-center
+                  rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                  group-hover:bg-white/30 group-hover:scale-110
+                  transition-all duration-300">
+        <img src="../src/images/php.png" alt="PHP" class="w-8 h-8 opacity-90">
+      </div>
+      <span class="text-sm text-white/80">PHP</span>
+    </div>
+
+    <div class="flex flex-col items-center gap-2 group">
+      <div class="w-14 h-14 flex items-center justify-center
+                  rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                  group-hover:bg-white/30 group-hover:scale-110
+                  transition-all duration-300">
+        <img src="../src/images/laravel.png" alt="Laravel" class="w-8 h-8 opacity-90">
+      </div>
+      <span class="text-sm text-white/80">Laravel</span>
+    </div>
+
+  </div>
+</div>
+
 
       <!-- Databases -->
       <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl">
-        <h3 class="text-xl font-semibold mb-6">Databases</h3>
-        <div class="grid grid-cols-3 gap-8 place-items-center">
-          <div class="skill">
-            <img src="../src/images/mongodb.png" alt="MongoDB">
-            <span>MongoDB</span>
-          </div>
-          <div class="skill">
-            <img src="../src/images/mysql.png" alt="MySQL">
-            <span>MySQL</span>
-          </div>
-          <div class="skill">
-            <img src="../src/images/postgresql.jpg" alt="PostgreSQL">
-            <span>PostgreSQL</span>
-          </div>
-        </div>
+  <h3 class="text-xl font-semibold mb-6">Databases</h3>
+
+  <div class="grid grid-cols-3 gap-8 place-items-center">
+
+    <div class="flex flex-col items-center gap-2 group">
+      <div class="w-14 h-14 flex items-center justify-center
+                  rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                  group-hover:bg-white/30 group-hover:scale-110
+                  transition-all duration-300">
+        <img src="../src/images/mongodb.png" alt="MongoDB" class="w-8 h-8 opacity-90">
       </div>
+      <span class="text-sm text-white/80">MongoDB</span>
+    </div>
+
+    <div class="flex flex-col items-center gap-2 group">
+      <div class="w-14 h-14 flex items-center justify-center
+                  rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                  group-hover:bg-white/30 group-hover:scale-110
+                  transition-all duration-300">
+        <img src="../src/images/mysql.png" alt="MySQL" class="w-8 h-8 opacity-90">
+      </div>
+      <span class="text-sm text-white/80">MySQL</span>
+    </div>
+
+    <div class="flex flex-col items-center gap-2 group">
+      <div class="w-14 h-14 flex items-center justify-center
+                  rounded-xl bg-white/20 shadow-md shadow-purple-300/40
+                  group-hover:bg-white/30 group-hover:scale-110
+                  transition-all duration-300">
+        <img src="../src/images/postgresql.jpg" alt="PostgreSQL" class="w-8 h-8 opacity-90">
+      </div>
+      <span class="text-sm text-white/80">PostgreSQL</span>
+    </div>
+
+  </div>
+</div>
 
     </div>
   </section>

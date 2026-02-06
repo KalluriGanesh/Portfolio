@@ -7,136 +7,180 @@
 
   <!-- Tailwind CSS -->
   <link href="../src/output.css" rel="stylesheet" />
+
+  <!-- Icons (Lucide) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
-<body class="min-h-screen bg-gradient-to-b from-sky-300 via-sky-400 to-cyan-500
- text-white">
+<body class="min-h-screen bg-gradient-to-b from-indigo-300 via-purple-300 to-fuchsia-300 text-white">
 
-  <!-- Navbar -->
-  <nav class="flex justify-end gap-6 p-6 font-semibold text-white/90">
-    <a href="index.html" class="hover:text-white">Home</a>
-    <a href="skills.html" class="hover:text-white">Skills</a>
-    <a href="projects.html" class="hover:text-white">Projects</a>
-    <a href="certificate.html" class="hover:text-white">Certificates</a>
-    <a href="contact.html" class="text-white">Contact</a>
-    <a href="cv.html" class="hover:text-white">CV</a>
+  <!-- Sticky Navbar -->
+  <nav
+    class="sticky top-0 z-50
+           flex items-center justify-between
+           px-8 py-4
+           bg-white/15 backdrop-blur-md
+           font-semibold text-white/90"
+  >
+    <a href="index.html"
+       class="text-2xl font-bold tracking-wide text-white hover:text-purple-100 transition">
+      Kalluri Ganesh
+    </a>
+
+    <div class="flex gap-6 text-sm md:text-base">
+      <a href="skills.html" class="hover:text-white">Skills</a>
+      <a href="projects.html" class="hover:text-white">Projects</a>
+      <a href="certificate.html" class="hover:text-white">Certificates</a>
+      <a href="contact.html" class="text-white">Contact</a>
+      <a href="cv.html" class="hover:text-white">CV</a>
+      <a href="about.html" class="hover:text-white">About</a>
+    </div>
   </nav>
 
   <!-- Page Title -->
-  <section class="text-center pt-12 pb-16">
-    <h1 class="text-5xl font-bold">Personal Details</h1>
+  <section class="text-center pt-12 pb-12">
+    <h1 class="text-5xl font-bold">Contact</h1>
     <p class="mt-4 text-white/80">
-      Let’s connect and build something meaningful
+      Let’s connect — I’m always open to opportunities and collaborations
     </p>
   </section>
 
-  <!-- CONTENT -->
-  <section class="max-w-6xl mx-auto px-8 pb-24">
-    <div class="grid md:grid-cols-2 gap-12">
+  <!-- CENTER CONTACT FORM -->
+  <section class="flex justify-center px-6 pb-24">
+    <div class="w-full max-w-xl bg-white/10 p-8 backdrop-blur-lg rounded-2xl 
+            shadow-2xl shadow-purple-400/50
+            hover:shadow-purple-500/60
+            transition-all duration-300">
 
-      <!-- PERSONAL INFO -->
-      <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl">
-        <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+      <h2 class="text-3xl font-semibold mb-6 text-center">
+        Send Me a Message
+      </h2>
 
-        <ul class="space-y-4 text-white/85">
-          <li><strong>Name:</strong> Kalluri Ganesh</li>
-          <li><strong>Degree:</strong> B.Tech in Computer Science and Engineering</li>
-          <li><strong>University:</strong> Lovely Professional University</li>
-          <li><strong>Specialization:</strong> Full-Stack Development</li>
-          <li><strong>Year:</strong> 3rd Year</li>
-          <li><strong>Location:</strong> India</li>
-          <li><strong>Languages:</strong> English, Telugu</li>
-        </ul>
-      </div>
+      <form
+        action="https://formspree.io/f/mwvqjpvb"
+        method="POST"
+        class="grid gap-6"
+      >
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+          class="p-3 rounded-lg bg-white/20 placeholder-white/70 outline-none"
+        />
 
-      <!-- CONTACT INFO -->
-      <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl">
-        <h2 class="text-3xl font-semibold mb-6">Contact Information</h2>
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          class="p-3 rounded-lg bg-white/20 placeholder-white/70 outline-none"
+        />
 
-        <ul class="space-y-4 text-white/85">
-          <li>
-            <strong>Email:</strong>
-            <a href="mailto:kalluriganesh15@gmail.com" class="hover:underline">
-              kalluriganesh15@gmail.com
-            </a>
-          </li>
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="4"
+          required
+          class="p-3 rounded-lg bg-white/20 placeholder-white/70 outline-none"
+        ></textarea>
 
-          <li>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/ganeshkalluri15/"
-               target="_blank"
-               class="hover:underline">
-              linkedin.com/in/ganeshkalluri15
-            </a>
-          </li>
+        <!-- Hidden fields -->
+        <input type="hidden" name="_subject" value="New Portfolio Message">
+        <input type="text" name="_gotcha" style="display:none">
 
-          <li>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/KalluriGanesh"
-               target="_blank"
-               class="hover:underline">
-              github.com/KalluriGanesh
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- CONTACT FORM (FORMSPREE CONNECTED) -->
-      <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl md:col-span-2">
-        <h2 class="text-3xl font-semibold mb-6 text-center">
-          Send Me a Message
-        </h2>
-
-        <form
-          action="https://formspree.io/f/mwvqjpvb"
-          method="POST"
-          class="grid md:grid-cols-2 gap-6"
+        <button
+          type="submit"
+          class="px-6 py-3
+                 bg-white text-purple-700 font-semibold
+                 rounded-full
+                 shadow-md shadow-purple-300/40
+                 hover:bg-purple-50 hover:scale-105
+                 transition-all duration-300"
         >
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            class="p-3 rounded-lg bg-white/20 placeholder-white/70 outline-none"
-          />
+          Send Message
+        </button>
+      </form>
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            class="p-3 rounded-lg bg-white/20 placeholder-white/70 outline-none"
-          />
+      <p class="text-center text-white/80 mt-6">
+        I’ll get back to you as soon as possible
+      </p>
+    </div>
+  </section>
 
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="4"
-            required
-            class="md:col-span-2 p-3 rounded-lg bg-white/20 placeholder-white/70 outline-none"
-          ></textarea>
+  <!-- CONTACT INFO (LOGOS ONLY) -->
+<section class="pb-24">
+  <div class="max-w-4xl mx-auto px-6 ">
+    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8
+            shadow-2xl shadow-purple-400/50
+            hover:shadow-purple-500/60
+            transition-all duration-300">
 
-          <!-- Subject -->
-          <input type="hidden" name="_subject" value="New Portfolio Message">
 
-          <!-- Spam protection -->
-          <input type="text" name="_gotcha" style="display:none">
+      <h3 class="text-2xl font-semibold mb-8 text-center">
+        Connect With Me
+      </h3>
 
-          <button
-            type="submit"
-            class="md:col-span-2 px-6 py-3 bg-white text-cyan-700 font-semibold rounded-full hover:scale-105 transition-all duration-300 shadow-md shadow-cyan-300/40 hover:bg-cyan-50 hover:shadow-cyan-400/60"
-          >
-            Send Message
-          </button>
-        </form>
+      <div class="flex justify-center items-center gap-10">
 
-        <p class="text-center text-white/80 mt-6">
-          I’ll get back to you as soon as possible
-        </p>
+        <!-- Email -->
+        <a
+          href="mailto:kalluriganesh15@gmail.com"
+          class="p-4 rounded-full bg-white/20
+                 hover:bg-white/30 hover:scale-110
+                 transition"
+          title="Email"
+        >
+          <i data-lucide="mail" class="w-7 h-7 text-white"></i>
+        </a>
+
+        <!-- Phone -->
+        <a
+          href="tel:+91XXXXXXXXXX"
+          class="p-4 rounded-full bg-white/20
+                 hover:bg-white/30 hover:scale-110
+                 transition"
+          title="Phone"
+        >
+          <i data-lucide="phone" class="w-7 h-7 text-white"></i>
+        </a>
+
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/ganeshkalluri15"
+          target="_blank"
+          class="p-4 rounded-full bg-white/20
+                 hover:bg-white/30 hover:scale-110
+                 transition"
+          title="LinkedIn"
+        >
+          <i data-lucide="linkedin" class="w-7 h-7 text-white"></i>
+        </a>
+
+        <!-- GitHub -->
+        <a
+          href="https://github.com/KalluriGanesh"
+          target="_blank"
+          class="p-4 rounded-full bg-white/20
+                 hover:bg-white/30 hover:scale-110
+                 transition"
+          title="GitHub"
+        >
+          <i data-lucide="github" class="w-7 h-7 text-white"></i>
+        </a>
+
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+  <!-- Activate Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
 
 </body>
 </html>

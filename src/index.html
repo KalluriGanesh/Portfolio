@@ -6,16 +6,37 @@
   <link href="../src/output.css" rel="stylesheet">
 
 </head>
-<body class="min-h-screen bg-gradient-to-b from-sky-300 via-sky-400 to-cyan-500
- text-white">
+<body class="min-h-screen bg-gradient-to-b from-indigo-300 via-purple-300 to-fuchsia-300 text-white">
+  <nav
+  class="sticky top-0 z-50
+         flex items-center justify-between
+         px-8 py-4
+         bg-white/10 backdrop-blur-md
+         font-semibold text-white/90"
+>
 
-  <nav class="flex justify-end gap-6 p-6 font-semibold text-white/90">
-    <a href="skills.html" class="text-white">Skills</a>
-    <a href="projects.html" class="hover:text-white">Projects</a>
-    <a href="certificate.html" class="hover:text-white">Certificates</a>
-    <a href="contact.html" class="hover:text-white">Contact</a>
-    <a href="cv.html" class="hover:text-white">CV</a>
-  </nav>
+  <!-- Name (Home Link) -->
+  <a
+    href="index.html"
+    class="text-2xl font-bold tracking-wide
+           text-white hover:text-cyan-100
+           transition"
+  >
+    Kalluri Ganesh
+  </a>
+
+  <!-- Navigation Links -->
+  <div class="flex gap-6 text-sm md:text-base">
+    <a href="skills.html" class="hover:text-white transition">Skills</a>
+    <a href="projects.html" class="hover:text-white transition">Projects</a>
+    <a href="certificate.html" class="hover:text-white transition">Certificates</a>
+    <a href="contact.html" class="hover:text-white transition">Contact</a>
+    <a href="cv.html" class="hover:text-white transition">CV</a>
+    <a href="about.html" class="hover:text-white transition">About</a>
+  </div>
+
+</nav>
+
 
   <section class="relative min-h-[85vh] flex items-center px-16">
 
@@ -38,11 +59,11 @@
 
       <div class="mt-8 flex gap-4">
         <a href="projects.html"  class="inline-block px-6 py-3
-         bg-white text-cyan-700 font-semibold
-         rounded-full
-         shadow-md shadow-cyan-300/40
-         hover:bg-cyan-50 hover:scale-105 hover:shadow-cyan-400/60
-         transition-all duration-300"">
+       bg-white text-purple-700 font-semibold
+       rounded-full
+       shadow-md shadow-purple-300/40
+       hover:bg-purple-50 hover:scale-105 hover:shadow-purple-400/60
+       transition-all duration-300">
           View Projects
         </a>
         <a href="cv.html" class="px-6 py-3 rounded-full border border-white/60">
